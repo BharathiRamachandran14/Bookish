@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "i18btx6OA+fjgoedZTG+XBfcdw2s5lb6ukWvVz32AwJ6u4qDafL4LfaB3nKJz9PPbNgDcIe9FJBtEWa+ZnmcZQ==",
+  "dgSpecHash": "mej1jjEsfLiQIWYLJKdWpzZpmpRfhAIG/vjcglZWEVcwfsVmw15o8NC2pxNF41N0qczJeLYn7wZRPX2aV+naFw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\bharam\\work\\Bookish\\Bookish\\Bookish.csproj",
+  "projectFilePath": "C:\\Users\\bharam\\work\\bookish.cs\\Bookish\\Bookish.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
