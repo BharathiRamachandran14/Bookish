@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\bharam\\work\\bookish.cs\\Bookish\\Bookish.csproj": {}
+    "C:\\Training\\Bookish\\Bookish\\Bookish.csproj": {}
   },
   "projects": {
-    "C:\\Users\\bharam\\work\\bookish.cs\\Bookish\\Bookish.csproj": {
+    "C:\\Training\\Bookish\\Bookish\\Bookish.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\bharam\\work\\bookish.cs\\Bookish\\Bookish.csproj",
+        "projectUniqueName": "C:\\Training\\Bookish\\Bookish\\Bookish.csproj",
         "projectName": "Bookish",
-        "projectPath": "C:\\Users\\bharam\\work\\bookish.cs\\Bookish\\Bookish.csproj",
-        "packagesPath": "C:\\Users\\bharam\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\bharam\\work\\bookish.cs\\Bookish\\obj\\",
+        "projectPath": "C:\\Training\\Bookish\\Bookish\\Bookish.csproj",
+        "packagesPath": "C:\\Users\\oligoo\\.nuget\\packages\\",
+        "outputPath": "C:\\Training\\Bookish\\Bookish\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\bharam\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\oligoo\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
@@ -37,6 +37,22 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.9, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.9, )"
+            },
+            "Npgsql.EntityFrameworkCore.PostgreSQL": {
+              "target": "Package",
+              "version": "[6.0.7, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
