@@ -9,9 +9,15 @@
         @foreach (var Book in Model)
         {
             <li>@Book.Title</li>
-            <li>@Book.Author</li>
-            <li>@Book.Blurb</li>
             <img src="@Book.CoverImageUrl" alt="@Book.Title" width="200px"/>
+            <li>By
+            @foreach (var author in Book.Author)
+            {
+                <li>@author.Name</li>
+            }
+            </li>
+            <li>@Book.Blurb</li>
+            
         }
         
     </ul>
