@@ -85,3 +85,12 @@ C:\Training\Bookish\Bookish\bin\Debug\net6.0\Microsoft.Extensions.Caching.Memory
 C:\Training\Bookish\Bookish\bin\Debug\net6.0\Npgsql.dll
 C:\Training\Bookish\Bookish\bin\Debug\net6.0\Npgsql.EntityFrameworkCore.PostgreSQL.dll
 C:\Training\Bookish\Bookish\obj\Debug\net6.0\Bookish.csproj.CopyComplete
+C:\Users\bharam\work\bookish.cs\Bookish\bin\Debug\net6.0\Humanizer.dll
+C:\Users\bharam\work\bookish.cs\Bookish\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\bharam\work\bookish.cs\Bookish\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\bharam\work\bookish.cs\Bookish\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\bharam\work\bookish.cs\Bookish\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\bharam\work\bookish.cs\Bookish\bin\Debug\net6.0\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\bharam\work\bookish.cs\Bookish\bin\Debug\net6.0\Npgsql.dll
+C:\Users\bharam\work\bookish.cs\Bookish\bin\Debug\net6.0\Npgsql.EntityFrameworkCore.PostgreSQL.dll
+C:\Users\bharam\work\bookish.cs\Bookish\obj\Debug\net6.0\Bookish.csproj.CopyComplete
