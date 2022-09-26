@@ -15,6 +15,10 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Training\Bookish\Bookish
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Training/Bookish/Bookish/Views/Book/CreateForm.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9va1xDcmVhdGVGb3JtLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Training/Bookish/Bookish/Views/Book/index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9va1xpbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
