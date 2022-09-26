@@ -1,0 +1,22 @@
+@model List<Member>
+@{
+    ViewData["Title"] = "Member";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Member</h1>
+    <ul style= "list-style-type : none;">
+        @foreach (var Member in Model)
+        {
+            <li>@Member.MemberName</li>
+            <li>
+                @foreach (var book in Member.CheckedOutBooks)
+                {
+                    <li>@book</li>
+                }
+            </li>
+            <br><br>  
+        }
+        
+    </ul>
+</div>

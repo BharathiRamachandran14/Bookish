@@ -31,9 +31,9 @@ public class BookController : Controller
 
         context.SaveChanges();
 
-        Book addedBook = addedEntity.Entity;
+        // Book addedBook = addedEntity.Entity;
 
-        return Created($"/books/{addedBook.Id}", addedBook);
+        return RedirectToAction("Index");
     }
 
 

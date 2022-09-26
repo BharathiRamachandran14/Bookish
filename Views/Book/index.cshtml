@@ -5,7 +5,7 @@
 
 <div class="text-center">
     <h1 class="display-4">Books</h1>
-    <ul>
+    <ul style= "list-style-type : none;">
         @foreach (var Book in Model)
         {
             <li>@Book.Title</li>
@@ -17,6 +17,7 @@
             }
             </li>
             <li>@Book.Blurb</li>
+            <br><br>
             
         }
         
