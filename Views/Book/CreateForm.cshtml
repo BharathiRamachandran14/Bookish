@@ -5,7 +5,7 @@
 
 <div class="text-center">
     <h1 class="display-4">Add a book to the library</h1>
-    <form asp-controller="Book" asp-action="CreateForm" method="post">
+    <form asp-controller="Book" asp-action="Create" method="post">
         <label>
             Title
             <input asp-for="Title" type="text">
@@ -18,6 +18,6 @@
             Cover Image
             <input asp-for="CoverImageUrl" type="text">
         </label>
-        <input type="submit" value= "Add Book">
+        <input type="submit" value= "create">
     </form>
 </div>
