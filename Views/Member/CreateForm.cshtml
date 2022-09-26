@@ -1,0 +1,19 @@
+@model Member
+@{
+    ViewData["Title"] = "create";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Add a book to the library</h1>
+    <form asp-controller="Member" asp-action="Create" method="post">
+        <label>
+            Name
+            <input asp-for="MemberName" type="text">
+        </label>
+        <label>
+            Password
+            <input asp-for="Password" type="password">
+        </label>
+        <input type="submit" value= "create">
+    </form>
+</div>

@@ -9,10 +9,10 @@
         @foreach (var Member in Model)
         {
             <li>@Member.MemberName</li>
-            <li>
+            <li>Books checked out:
                 @foreach (var book in Member.CheckedOutBooks)
                 {
-                    <li>@book</li>
+                    <li>@book.Title</li>
                 }
             </li>
             <br><br>  

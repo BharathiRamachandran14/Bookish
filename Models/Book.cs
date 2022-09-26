@@ -7,5 +7,6 @@ namespace Bookish.Models
         public List<Author>? Author { get; set; }
         public string? CoverImageUrl { get; set; }
         public string? Blurb { get; set; }
+        public List<Member>? CheckedOutBy { get; set; }
     }
 }

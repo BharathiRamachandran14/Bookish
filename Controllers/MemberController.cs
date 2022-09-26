@@ -15,45 +15,45 @@ public class MemberController : Controller
     }
     public IActionResult Index()
     {
-        // var context = new BookishContext();
-        // List<Book> books = context.Books
-        //     .Include(b => b.Author)
-        //     .ToList();
+        var context = new BookishContext();
+        List<Member> members = context.Members
+            .Include(b => b.CheckedOutBooks)
+            .ToList();
 
         // return View(books);
-        List<Member>members = new List<Member> 
-        {
-            new Member 
-            {
-                MemberName = "Oli",
-                CheckedOutBooks = new List<string>{
-                "Harry Potter 1",
-                "Harry Potter 2"
-                }
-            }
+        // List<Member>members = new List<Member> 
+        // {
+        //     new Member 
+        //     {
+        //         MemberName = "Oli",
+        //         CheckedOutBooks = new List<string>{
+        //         "Harry Potter 1",
+        //         "Harry Potter 2"
+        //         }
+        //     }
 
-        };
+        // };
         return View(members);    
     }
 
-    // [HttpPost("")]
-    // public IActionResult Create([FromForm] Book newBook)
-    // {
-    //     var context = new BookishContext();
-    //     var addedEntity = context.Books.Add(newBook);
+    [HttpPost("")]
+    public IActionResult Create([FromForm] Member newMember)
+    {
+        var context = new BookishContext();
+        var addedEntity = context.Members.Add(newMember);
 
-    //     context.SaveChanges();
+        context.SaveChanges();
 
-    //     // Book addedBook = addedEntity.Entity;
+        // Member addedBook = addedEntity.Entity;
 
-    //     return RedirectToAction("Index");
-    // }
+        return RedirectToAction("Index");
+    }
 
 
-    // [HttpGet("create")]
-    // public IActionResult CreateForm()
-    // {
-    //     return View();
-    // }
+    [HttpGet("create")]
+    public IActionResult CreateForm()
+    {
+        return View();
+    }
 
 }

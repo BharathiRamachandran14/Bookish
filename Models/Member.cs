@@ -4,6 +4,7 @@ namespace Bookish.Models
     {
         public int Id { get; set; }
         public string? MemberName { get; set; }
-        public List<string>? CheckedOutBooks { get; set; }
+        public string? Password { get; set; }
+        public List<Book>? CheckedOutBooks { get; set; }
     }
 }
