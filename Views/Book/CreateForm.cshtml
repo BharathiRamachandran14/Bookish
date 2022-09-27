@@ -1,4 +1,6 @@
-@model Book
+@using Bookish.Models.Requests;
+
+@model BookRequest
 @{
     ViewData["Title"] = "create";
 }
@@ -9,6 +11,10 @@
         <label>
             Title
             <input asp-for="Title" type="text">
+        </label>
+         <label>
+            Author
+            <select asp-for="Authors" asp-items="@ViewBag.Authors"></select>
         </label>
           <label>
             Blurb

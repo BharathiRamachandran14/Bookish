@@ -1,4 +1,5 @@
 using Bookish.Models;
+using Bookish.Models.Requests;
 using Bookish.Repositories;
 
 namespace Bookish.Services
@@ -17,9 +18,9 @@ namespace Bookish.Services
             return _books.GetAllBooks();
         }
 
-        public Book Create(Book newBook)
+        public Book Create(BookRequest newBookRequest)
         {
-            return _books.Create(newBook);
+            return _books.Create(newBookRequest);
         }
     }
 }

@@ -1,4 +1,5 @@
 using Bookish.Models;
+using Bookish.Models.Requests;
 using Microsoft.EntityFrameworkCore;
 
 
@@ -8,20 +9,31 @@ namespace Bookish.Repositories
     {
         private readonly BookishContext? _context;
 
+        public BookRepo()
+        {
+            _context = new BookishContext();
+        }
+
 
         public IEnumerable<Book> GetAllBooks()
         {
             return _context.Books
-            .Include(b => b.Author); 
+            .Include(b => b.Authors); 
         }
 
-        public Book Create(Book newBook)
+        public Book Create(BookRequest newBookRequest)
         {
+            List<Author> authors = _context
+                .Authors
+                .Where(a => newBookRequest.Authors.Contains(a.Id))
+                .ToList();
+          
             Book createNewBook = new Book
             {
-                Title = newBook.Title,
-                Blurb = newBook.Blurb,
-                CoverImageUrl = newBook.CoverImageUrl,
+                Title = newBookRequest.Title,
+                Authors = authors,
+                Blurb = newBookRequest.Blurb,
+                CoverImageUrl = newBookRequest.CoverImageUrl,
             };
             
             var addedEntity = _context.Books.Add(createNewBook);

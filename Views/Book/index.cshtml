@@ -11,7 +11,7 @@
             <li>@Book.Title</li>
             <img src="@Book.CoverImageUrl" alt="@Book.Title" width="200px"/>
             <li>By
-            @foreach (var author in Book.Author)
+            @foreach (var author in Book.Authors)
             {
                 <li>@author.Name</li>
             }
