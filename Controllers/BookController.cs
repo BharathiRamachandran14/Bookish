@@ -1,23 +1,25 @@
 using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
 using Bookish.Models;
-using Microsoft.EntityFrameworkCore;
+using Bookish.Services;
 
 namespace Bookish.Controllers;
 [Route("books")]
 public class BookController : Controller
 {
     private readonly ILogger<BookController> _logger;
+    private readonly BookService _bookService;
 
     public BookController(ILogger<BookController> logger)
     {
         _logger = logger;
+        _bookService = new BookService();
     }
     public IActionResult Index()
     {
         var context = new BookishContext();
-        List<Book> books = context.Books
-            .Include(b => b.Author)
+        List<Book> books = _bookService
+            .GetAllBooks()
             .ToList();
 
         return View(books);
@@ -26,12 +28,7 @@ public class BookController : Controller
     [HttpPost("")]
     public IActionResult Create([FromForm] Book newBook)
     {
-        var context = new BookishContext();
-        var addedEntity = context.Books.Add(newBook);
-
-        context.SaveChanges();
-
-        // Book addedBook = addedEntity.Entity;
+        Book addedBook = _bookService.Create(newBook);
 
         return RedirectToAction("Index");
     }
